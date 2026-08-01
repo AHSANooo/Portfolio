@@ -1002,6 +1002,109 @@ main {
     font-weight: 700;
 }
 
+.contact-cta {
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.72fr 1.28fr;
+    gap: 1rem;
+    padding: 1.15rem;
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(31, 35, 148, 0.28);
+    background:
+        radial-gradient(circle at 14% 18%, rgba(47, 84, 255, 0.14), transparent 28%),
+        radial-gradient(circle at 88% 78%, rgba(15, 52, 96, 0.22), transparent 34%),
+        linear-gradient(180deg, rgba(12, 24, 44, 0.86), rgba(8, 17, 32, 0.96));
+    box-shadow: var(--shadow-soft);
+}
+
+.contact-intro,
+.contact-link-card {
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.contact-intro {
+    padding: 1.35rem;
+    display: grid;
+    align-content: center;
+    gap: 0.7rem;
+}
+
+.contact-kicker {
+    font-family: var(--font-head);
+    font-size: 1.35rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--text);
+}
+
+.contact-intro p {
+    color: var(--text-muted);
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+}
+
+.contact-link-card {
+    min-height: 104px;
+    padding: 0.92rem 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.76rem;
+    transition: transform 170ms ease, border-color 170ms ease, background 170ms ease, box-shadow 170ms ease;
+}
+
+.contact-link-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(90, 124, 255, 0.52);
+    background: rgba(17, 32, 58, 0.5);
+    box-shadow: 0 0 0 1px rgba(47, 84, 255, 0.12), 0 14px 36px rgba(0, 0, 0, 0.24);
+}
+
+.contact-icon {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(31, 35, 148, 0.35), rgba(15, 52, 96, 0.38));
+    border: 1px solid rgba(154, 179, 255, 0.24);
+    color: #f4f8ff;
+}
+
+.contact-icon svg {
+    width: 21px;
+    height: 21px;
+    fill: currentColor;
+}
+
+.contact-copy {
+    display: grid;
+    gap: 0.22rem;
+    min-width: 0;
+}
+
+.contact-title {
+    color: rgba(154, 179, 255, 0.95);
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.contact-value {
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
 .footer {
     border-top: 1px solid rgba(255, 255, 255, 0.06);
     margin-top: 2rem;
@@ -1106,6 +1209,10 @@ main {
     .cert-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .contact-cta {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 860px) {
@@ -1162,6 +1269,10 @@ main {
     .projects-grid,
     .contact-grid,
     .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-list {
         grid-template-columns: 1fr;
     }
 
