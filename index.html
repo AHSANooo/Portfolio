@@ -4,28 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Ahsan - Computer Science student at FAST-NUCES Islamabad, building optimized cloud architectures, robust software systems, and intelligent agentic workflows.">
-    <meta name="keywords" content="Muhammad Ahsan, FAST-NUCES Islamabad, AI Agentic Workflows, Cloud Infrastructure, Software Development, Python, C++, AWS, Docker">
+    <title>Muhammad Ahsan | Backend, Cloud &amp; Agentic AI Systems</title>
+    <meta name="description" content="Computer Science undergraduate at FAST-NUCES Islamabad (Batch '27). Engineering cloud-native backend architectures, clinical data pipelines, and autonomous developer tooling.">
+    <meta name="keywords" content="Muhammad Ahsan, Backend Engineer, Cloud Infrastructure, Agentic AI, FAST-NUCES Islamabad, Python, AWS, Docker, Distributed Systems">
     <meta name="author" content="Muhammad Ahsan">
-    <title>Muhammad Ahsan | Engineering Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2307111f'/><text x='50' y='65' font-size='50' font-weight='800' font-family='Space Grotesk, sans-serif' text-anchor='middle' fill='%232f54ff'>MA</text></svg>">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.mahsan-cs.me/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Open Graph / Social Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mahsan-cs.me/">
+    <meta property="og:title" content="Muhammad Ahsan | Backend, Cloud &amp; Agentic AI Systems">
+    <meta property="og:description" content="Computer Science undergraduate at FAST-NUCES Islamabad (Batch '27). Engineering cloud-native backend architectures, clinical data pipelines, and autonomous developer tooling.">
+    <meta property="og:image" content="https://www.mahsan-cs.me/og-card.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad Ahsan | Backend, Cloud &amp; Agentic AI Systems">
+    <meta name="twitter:description" content="Computer Science undergraduate at FAST-NUCES Islamabad (Batch '27). Engineering cloud-native backend architectures, clinical data pipelines, and autonomous developer tooling.">
+    <meta name="twitter:image" content="https://www.mahsan-cs.me/og-card.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammad Ahsan",
+      "url": "https://www.mahsan-cs.me/",
+      "jobTitle": "Backend & Cloud Systems Engineer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "FAST-NUCES Islamabad"
+      },
+      "sameAs": [
+        "https://github.com/AHSANooo",
+        "https://www.linkedin.com/in/mahsan-cs"
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <div class="animated-bg" aria-hidden="true">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="orb orb-c"></div>
-        <div class="grid-overlay"></div>
-    </div>
-
     <header class="navbar" id="navbar">
         <div class="nav-container">
-            <a class="nav-brand" href="#home" aria-label="Go to home">MA</a>
+            <a class="nav-brand" href="#home" aria-label="Muhammad Ahsan Home">
+                <svg viewBox="0 0 36 36" width="36" height="36" fill="none" aria-hidden="true">
+                    <rect width="36" height="36" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
+                    <path d="M7.5 25.5V10.5L13.5 19L19.5 10.5V25.5" stroke="#F3F6FA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.5 25.5L24 10.5L28.5 25.5" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 20.5H27" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </a>
             <nav class="nav-menu" id="navMenu" aria-label="Primary">
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#skills">Skills</a>
@@ -35,7 +76,7 @@
                 <a class="nav-link" href="#projects">Projects</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </nav>
-            <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -44,20 +85,24 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero section-shell" id="home">
             <div class="hero-inner">
                 <div class="hero-copy reveal">
                     <p class="eyebrow">Computer Science • FAST-NUCES Islamabad</p>
                     <h1>Muhammad Ahsan</h1>
-                    <div class="role-stack" aria-label="Professional focus areas">
-                        <span class="role-pill active">AI Agentic Workflows</span>
-                        <span class="role-pill">Cloud Infrastructure</span>
-                        <span class="role-pill">Software Development</span>
+                    <div class="hero-focus-tags" aria-label="Core focus areas">
+                        <span class="focus-tag">Backend &amp; Cloud Systems</span>
+                        <span class="focus-sep">·</span>
+                        <span class="focus-tag">Agentic AI Workflows</span>
+                        <span class="focus-sep">·</span>
+                        <span class="focus-tag">Distributed Data Pipelines</span>
                     </div>
-                    <p class="hero-description">Computer Science student at FAST-NUCES Islamabad, building optimized cloud architectures, robust software systems, and intelligent agentic workflows.</p>
+                    <p class="hero-description">Computer Science undergraduate at FAST-NUCES Islamabad (Batch '27). Engineering cloud-native backend architectures, clinical data pipelines, and autonomous developer tooling.</p>
                     <div class="hero-actions">
                         <a class="button button-primary" href="#projects">Explore Projects</a>
                         <a class="button button-secondary" href="#contact">Contact</a>
+                        <a class="button button-secondary" href="https://www.linkedin.com/in/mahsan-cs" target="_blank" rel="noreferrer">Resume / CV</a>
                     </div>
                     <div class="social-row" aria-label="Social links">
                         <a class="social-chip" href="https://github.com/AHSANooo" target="_blank" rel="noreferrer" aria-label="GitHub profile">
@@ -69,143 +114,116 @@
                         <a class="social-chip" href="mailto:ahsankhetran72@gmail.com" aria-label="Send email">
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"></path></svg>
                         </a>
-                        <a class="social-chip" href="tel:03108155143" aria-label="Call phone number">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.3 15.3 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.07.35 2.23.54 3.42.54a1 1 0 0 1 1 1v3.52a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.52a1 1 0 0 1 1 1c0 1.19.19 2.35.54 3.42a1 1 0 0 1-.24 1L6.6 10.8z"></path></svg>
-                        </a>
                     </div>
                 </div>
                 <div class="hero-visual reveal">
                     <div class="portrait-frame">
-                        <div class="portrait-glow"></div>
-                        <img class="portrait" src="Profile Picture.png" alt="Muhammad Ahsan profile picture">
+                        <img class="portrait" src="profile.webp" alt="Muhammad Ahsan profile picture" width="360" height="360" fetchpriority="high">
                     </div>
-                    <div class="floating-note note-top">AI Systems</div>
-                    <div class="floating-note note-right">Cloud Ops</div>
-                    <div class="floating-note note-bottom">Modular Build Systems</div>
                 </div>
             </div>
-            <button class="scroll-indicator" id="scrollIndicator" aria-label="Scroll to content">
-                <span class="scroll-text">Scroll Down</span>
-                <span class="scroll-mouse" aria-hidden="true"><span class="scroll-wheel"></span></span>
-            </button>
         </section>
 
+        <!-- About Section -->
         <section class="section-shell" id="about">
             <div class="section-head reveal">
-                <p class="eyebrow">About</p>
-                <h2>Engineering Philosophy</h2>
+                <p class="eyebrow">Overview</p>
+                <h2>Engineering Focus</h2>
             </div>
             <div class="about-layout">
                 <div class="about-panel reveal">
-                    <p>I build with a direct rule set: function first, then efficiency, then scale. My work sits at the intersection of agentic AI, cloud systems, and modular software design.</p>
-                    <p>I prefer short feedback loops, clean separation of responsibilities, and code paths that stay readable under pressure. The goal is not decoration. The goal is reliable output.</p>
+                    <p>I build backend services, cloud architectures, and agentic workflows focused on deterministic execution, data pipeline integrity, and scalable resource utilization.</p>
+                    <p>Currently serving as a Lab Demonstrator for Database Systems and Computer Networks at FAST-NUCES, and leading cloud engineering initiatives as Head of Cloud Team at Google Developer Groups (GDG) FAST Islamabad.</p>
                 </div>
                 <div class="about-grid reveal">
                     <article class="metric-card">
-                        <span class="metric-icon">01</span>
-                        <h3>Output</h3>
-                        <p>Absolute functional correctness.</p>
+                        <div class="metric-stat">73 / 193</div>
+                        <p class="metric-desc">Teams &amp; deps automated via Appium and Selenium test suites for NaSCon '26.</p>
                     </article>
                     <article class="metric-card">
-                        <span class="metric-icon">02</span>
-                        <h3>Optimization</h3>
-                        <p>High-efficiency memory and processor usage.</p>
+                        <div class="metric-stat">HL7 FHIR R4</div>
+                        <p class="metric-desc">Clinical data pipeline parsing medical prescriptions into Neo4j graph nodes.</p>
                     </article>
                     <article class="metric-card">
-                        <span class="metric-icon">03</span>
-                        <h3>Dynamic</h3>
-                        <p>Agile systems that adapt quickly.</p>
+                        <div class="metric-stat">4 Verified</div>
+                        <p class="metric-desc">Certifications across Generative AI application development and AWS Cloud.</p>
                     </article>
                     <article class="metric-card">
-                        <span class="metric-icon">04</span>
-                        <h3>Scalability</h3>
-                        <p>Architectures designed for enterprise growth.</p>
-                    </article>
-                    <article class="metric-card wide">
-                        <span class="metric-icon">05</span>
-                        <h3>Modularity</h3>
-                        <p>Logic split into atomic files and components.</p>
+                        <div class="metric-stat">FAST '27</div>
+                        <p class="metric-desc">BS Computer Science at National University of Computer and Emerging Sciences.</p>
                     </article>
                 </div>
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section class="section-shell" id="skills">
             <div class="section-head reveal">
                 <p class="eyebrow">Capabilities</p>
-                <h2>Skills</h2>
+                <h2>Technical Proficiencies</h2>
             </div>
             <div class="skills-grid">
                 <article class="skill-card reveal">
                     <div class="skill-card-head">
                         <span class="skill-card-tag">Languages</span>
-                        <h3>Programming Languages</h3>
-                        <p>Strong language foundation used across systems, product, and protocol engineering.</p>
+                        <h3>Programming &amp; Protocols</h3>
+                        <p>Core programming languages applied across systems, smart contracts, and automation.</p>
                     </div>
                     <div class="badge-grid">
                         <span class="skill-badge">Python</span>
                         <span class="skill-badge">C++</span>
                         <span class="skill-badge">Solidity</span>
-                        <span class="skill-badge">JavaScript/TypeScript</span>
+                        <span class="skill-badge">JavaScript / TypeScript</span>
+                        <span class="skill-badge">SQL</span>
                     </div>
                 </article>
                 <article class="skill-card reveal">
                     <div class="skill-card-head">
-                        <span class="skill-card-tag">Backend &amp; Frameworks</span>
-                        <h3>API and Application Development</h3>
-                        <p>Frameworks and runtimes for scalable services, fast delivery, and maintainable products.</p>
+                        <span class="skill-card-tag">Backend</span>
+                        <h3>API &amp; Service Frameworks</h3>
+                        <p>High-throughput frameworks for resilient microservices and distributed endpoints.</p>
                     </div>
                     <div class="badge-grid">
                         <span class="skill-badge">Django REST Framework</span>
                         <span class="skill-badge">FastAPI</span>
-                        <span class="skill-badge">Next.js</span>
+                        <span class="skill-badge">Next.js App Router</span>
                         <span class="skill-badge">Node.js</span>
                     </div>
                 </article>
                 <article class="skill-card reveal">
                     <div class="skill-card-head">
                         <span class="skill-card-tag">Cloud &amp; DevOps</span>
-                        <h3>Cloud Delivery and Operations</h3>
-                        <p>Cloud-native deployment patterns focused on reliability, cost efficiency, and growth.</p>
+                        <h3>Infrastructure &amp; Orchestration</h3>
+                        <p>Cloud-native containerization and serverless infrastructure on AWS and GCP.</p>
                     </div>
                     <div class="badge-grid">
-                        <span class="skill-badge">AWS (Lambda, S3, API Gateway)</span>
+                        <span class="skill-badge">AWS (Lambda, S3, API Gateway, SNS)</span>
+                        <span class="skill-badge">Google Cloud Platform</span>
                         <span class="skill-badge">Docker</span>
-                        <span class="skill-badge">Serverless Architectures</span>
+                        <span class="skill-badge">CI/CD Pipelines</span>
                     </div>
                 </article>
                 <article class="skill-card reveal">
                     <div class="skill-card-head">
-                        <span class="skill-card-tag">AI &amp; Data</span>
-                        <h3>Intelligence and Data Tooling</h3>
-                        <p>Applied AI and data pipelines for automation, perception, and decision workflows.</p>
+                        <span class="skill-card-tag">AI &amp; Data Systems</span>
+                        <h3>Intelligent Pipelines</h3>
+                        <p>Multi-agent architectures, computer vision pipelines, and structured knowledge extraction.</p>
                     </div>
                     <div class="badge-grid">
-                        <span class="skill-badge">AI Agentic Workflows</span>
-                        <span class="skill-badge">LLM Integration</span>
-                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">Agentic AI Workflows</span>
+                        <span class="skill-badge">Gemini API &amp; LLM Pipelines</span>
+                        <span class="skill-badge">Neo4j Graphs</span>
                         <span class="skill-badge">OpenCV</span>
-                        <span class="skill-badge">Web Scraping (Selenium/BeautifulSoup)</span>
-                    </div>
-                </article>
-                <article class="skill-card reveal">
-                    <div class="skill-card-head">
-                        <span class="skill-card-tag">Architecture &amp; Core</span>
-                        <h3>Engineering Foundations</h3>
-                        <p>Core software principles and structures that keep systems modular and robust over time.</p>
-                    </div>
-                    <div class="badge-grid">
-                        <span class="skill-badge">Modular Software Architecture</span>
-                        <span class="skill-badge">Object-Oriented Design</span>
-                        <span class="skill-badge">Data Structures &amp; Algorithms</span>
+                        <span class="skill-badge">Selenium &amp; Scraping</span>
                     </div>
                 </article>
             </div>
         </section>
 
+        <!-- Education Section -->
         <section class="section-shell" id="education">
             <div class="section-head reveal">
-                <p class="eyebrow">Academic Background</p>
+                <p class="eyebrow">Academic Foundation</p>
                 <h2>Education</h2>
             </div>
             <article class="education-card reveal">
@@ -214,13 +232,14 @@
                 </div>
                 <div class="education-content">
                     <div class="label-row">
-                        <span class="label-chip accent">Aug 2023 - Present | CGPA: 2.95</span>
+                        <span class="label-chip accent">Aug 2023 - Jun 2027</span>
                     </div>
                     <h3>Bachelor of Science in Computer Science</h3>
                     <h4>FAST-NUCES, Islamabad Campus</h4>
-                    <div class="badge-grid compact">
+                    <div class="badge-grid">
                         <span class="skill-badge">Data Structures &amp; Algorithms</span>
                         <span class="skill-badge">Database Systems</span>
+                        <span class="skill-badge">Computer Networks</span>
                         <span class="skill-badge">Object-Oriented Programming</span>
                         <span class="skill-badge">Cloud Computing</span>
                     </div>
@@ -228,71 +247,99 @@
             </article>
         </section>
 
+        <!-- Certifications Section -->
         <section class="section-shell" id="certifications">
             <div class="section-head reveal">
-                <p class="eyebrow">Credentials</p>
-                <h2>Licenses &amp; Certifications</h2>
+                <p class="eyebrow">Verified Credentials</p>
+                <h2>Certifications</h2>
             </div>
             <div class="cert-grid">
                 <article class="cert-card reveal">
-                    <div class="label-row">
-                        <span class="label-chip accent">May 2026</span>
-                        <a href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=ac34bc5597d61b44" target="_blank" rel="noreferrer">Verify</a>
+                    <div>
+                        <div class="label-row">
+                            <span class="label-chip accent">May 2026</span>
+                            <a class="verify-link" href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=ac34bc5597d61b44" target="_blank" rel="noreferrer">Verify ↗</a>
+                        </div>
+                        <h3>Generative AI Application Developer - Top Performer</h3>
+                        <p class="issuer">ULEFUSA / Pak Angels / NCEAC - HEC (Cohort 3)</p>
+                        <p class="cert-desc">Awarded Top Performer honors in deep AI-driven ecosystems, integrating generative models into production cloud environments.</p>
                     </div>
-                    <h3>Generative AI Application Developer - Top Performer</h3>
-                    <p class="issuer">ULEFUSA - UETians Lahore Endowment Foundation USA / Pak Angels / NCEAC - HEC (Cohort 3)</p>
-                    <p>Awarded Top Performer honors in deep AI-driven ecosystems, integrating advanced generative models into scalable cloud environments.</p>
                     <p class="meta">Credential ID: ac34bc5597d61b44</p>
                 </article>
                 <article class="cert-card reveal">
-                    <div class="label-row">
-                        <span class="label-chip accent">Feb 2025</span>
-                        <a href="https://www.credly.com/go/D6zMZlQZBmaYBvdms8a89A" target="_blank" rel="noreferrer">Verify</a>
+                    <div>
+                        <div class="label-row">
+                            <span class="label-chip accent">Feb 2025</span>
+                            <a class="verify-link" href="https://www.credly.com/go/D6zMZlQZBmaYBvdms8a89A" target="_blank" rel="noreferrer">Verify ↗</a>
+                        </div>
+                        <h3>AWS Educate Getting Started with Storage</h3>
+                        <p class="issuer">Amazon Web Services (AWS)</p>
+                        <p class="cert-desc">Cloud storage architectures, Amazon S3 lifecycle management, bucket policies, and cross-region replication.</p>
                     </div>
-                    <h3>AWS Educate Getting Started with Storage</h3>
-                    <p class="issuer">Amazon Web Services (AWS)</p>
-                    <p class="meta">Skills: Amazon Web Services (AWS), Amazon S3</p>
+                    <p class="meta">Issued via Credly</p>
                 </article>
                 <article class="cert-card reveal">
-                    <div class="label-row">
-                        <span class="label-chip accent">Feb 2025</span>
-                        <a href="https://www.credly.com/badges/522301fd-e6ce-4f8e-ac6f-147fad90d8d9/linked_in_profile" target="_blank" rel="noreferrer">Verify</a>
+                    <div>
+                        <div class="label-row">
+                            <span class="label-chip accent">Feb 2025</span>
+                            <a class="verify-link" href="https://www.credly.com/badges/522301fd-e6ce-4f8e-ac6f-147fad90d8d9/linked_in_profile" target="_blank" rel="noreferrer">Verify ↗</a>
+                        </div>
+                        <h3>AWS Educate Introduction to Cloud 101</h3>
+                        <p class="issuer">Amazon Web Services (AWS)</p>
+                        <p class="cert-desc">Core cloud concepts, serverless compute paradigms with AWS Lambda, IAM security policies, and resource provisioning.</p>
                     </div>
-                    <h3>AWS Educate Introduction to Cloud 101</h3>
-                    <p class="issuer">Amazon Web Services (AWS)</p>
-                    <p class="meta">Skills: Amazon Web Services (AWS), AWS Lambda</p>
+                    <p class="meta">Issued via Credly</p>
                 </article>
                 <article class="cert-card reveal">
-                    <div class="label-row">
-                        <span class="label-chip accent">Jan 2024</span>
-                        <a href="https://www.hackerrank.com/certificates/40d08d720a71" target="_blank" rel="noreferrer">Verify</a>
+                    <div>
+                        <div class="label-row">
+                            <span class="label-chip accent">Jan 2024</span>
+                            <a class="verify-link" href="https://www.hackerrank.com/certificates/40d08d720a71" target="_blank" rel="noreferrer">Verify ↗</a>
+                        </div>
+                        <h3>Problem Solving Certificate</h3>
+                        <p class="issuer">HackerRank</p>
+                        <p class="cert-desc">Algorithmic analysis, advanced data structures, complexity reduction, and edge-case handling.</p>
                     </div>
-                    <h3>Problem Solving Certificate</h3>
-                    <p class="issuer">HackerRank</p>
                     <p class="meta">Credential ID: 40D08D720A71</p>
-                    <p class="meta">Skills: Debugging, Problem Solving</p>
                 </article>
             </div>
         </section>
 
+        <!-- Experience Section -->
         <section class="section-shell" id="experience">
             <div class="section-head reveal">
-                <p class="eyebrow">Experience</p>
-                <h2>Professional Timeline</h2>
+                <p class="eyebrow">Career &amp; Leadership</p>
+                <h2>Engineering Experience</h2>
             </div>
             <div class="timeline">
                 <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="label-chip accent">Jun 2026 - Present</span>
+                        <span class="label-chip accent">Jun 2026 - Aug 2026</span>
                         <h3>Global Volunteer</h3>
                         <h4>AIESEC in Egypt</h4>
                         <p class="timeline-meta">Cairo, Egypt · On-site</p>
-                        <p>Mapped undervalued tourism sectors and executed localized branding strategies to foster sustainable economic development.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Community Outreach</span>
-                            <span class="skill-badge">Localized Branding</span>
-                            <span class="skill-badge">Sustainable Development</span>
+                        <p class="timeline-desc">Engineered targeted data-backed outreach and localized development strategies to foster sustainable economic systems.</p>
+                        <div class="badge-grid">
+                            <span class="skill-badge">Cross-Border Operations</span>
+                            <span class="skill-badge">Strategy</span>
+                            <span class="skill-badge">Outreach</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="label-chip accent">Feb 2026 - Oct 2026</span>
+                        <h3>Head of App Dev Team</h3>
+                        <h4>NaSCon '26</h4>
+                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
+                        <p class="timeline-desc">Directed technical infrastructure and automated test harnesses (Appium and Selenium) managing 73 teams and 193 participants across all event systems.</p>
+                        <div class="badge-grid">
+                            <span class="skill-badge">Appium</span>
+                            <span class="skill-badge">Selenium</span>
+                            <span class="skill-badge">System Architecture</span>
+                            <span class="skill-badge">Technical Leadership</span>
                         </div>
                     </div>
                 </article>
@@ -300,28 +347,14 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <span class="label-chip accent">Feb 2026 - Present</span>
-                        <h3>Head of App Dev Team</h3>
-                        <h4>NaSCon</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
-                        <p>Managed technical teams to deliver campus-wide event applications. Oversaw code reviews and architecture design.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Team Leadership</span>
-                            <span class="skill-badge">Code Reviews</span>
-                            <span class="skill-badge">Architecture Design</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="label-chip accent">Feb 2026 - Jun 2026</span>
                         <h3>Lab Demonstrator</h3>
                         <h4>FAST-NUCES</h4>
                         <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
-                        <p>Instructed and mentored students in Database Systems.</p>
-                        <div class="badge-grid compact timeline-tags">
+                        <p class="timeline-desc">Instructed undergraduate lab sessions in Database Systems and Computer Networks, guiding query optimization, normalization, and protocol routing.</p>
+                        <div class="badge-grid">
                             <span class="skill-badge">Database Systems</span>
-                            <span class="skill-badge">Mentoring</span>
+                            <span class="skill-badge">Computer Networks</span>
+                            <span class="skill-badge">Query Optimization</span>
                         </div>
                     </div>
                 </article>
@@ -332,10 +365,10 @@
                         <h3>Chief Technology Architect</h3>
                         <h4>Prime Innovators</h4>
                         <p class="timeline-meta">Remote</p>
-                        <p>Led technical design and system architecture for MVP, governing engineering standards for modularity and scalability.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Software Design</span>
-                            <span class="skill-badge">Technical Architecture</span>
+                        <p class="timeline-desc">Directed system architecture and service boundaries for core MVP products, enforcing modular patterns, schema definitions, and API scalability.</p>
+                        <div class="badge-grid">
+                            <span class="skill-badge">System Architecture</span>
+                            <span class="skill-badge">API Governance</span>
                             <span class="skill-badge">Scalability</span>
                         </div>
                     </div>
@@ -347,54 +380,11 @@
                         <h3>Head of Cloud Team</h3>
                         <h4>Google Developer Groups (GDG) FAST Islamabad</h4>
                         <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
-                        <p>Managed Google Cloud Platform (GCP) and Agile Development integrations.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Google Cloud Platform (GCP)</span>
-                            <span class="skill-badge">Agile Development</span>
-                            <span class="skill-badge">Cloud Leadership</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="label-chip accent">Nov 2025 - Dec 2025</span>
-                        <h3>Campus Ambassador</h3>
-                        <h4>AIAA NUST Chapter</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan</p>
-                        <p>Represented the chapter and supported event engagement and outreach initiatives.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Ambassador Program</span>
-                            <span class="skill-badge">Outreach</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="label-chip accent">Sep 2025 - Jul 2026</span>
-                        <h3>Information &amp; Coordination Manager</h3>
-                        <h4>FAST LADS</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
-                        <p>Led coordination workflows and information handling to support team operations and delivery.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Coordination</span>
-                            <span class="skill-badge">Information Management</span>
-                            <span class="skill-badge">Team Operations</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="label-chip accent">Sep 2024 - Sep 2025</span>
-                        <h3>Marketing Vice Head</h3>
-                        <h4>FAST LADS</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
-                        <p>Directed marketing activity and helped coordinate promotional execution for the organization.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Marketing</span>
-                            <span class="skill-badge">Promotion Strategy</span>
+                        <p class="timeline-desc">Orchestrated cloud computing workshops and architectural labs covering Google Cloud Platform (GCP), containers, and agile delivery.</p>
+                        <div class="badge-grid">
+                            <span class="skill-badge">Google Cloud (GCP)</span>
+                            <span class="skill-badge">Cloud Architecture</span>
+                            <span class="skill-badge">Agile Delivery</span>
                         </div>
                     </div>
                 </article>
@@ -402,28 +392,14 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <span class="label-chip accent">Jun 2025 - Aug 2025</span>
-                        <h3>Back End Developer Intern</h3>
+                        <h3>Backend Developer Intern</h3>
                         <h4>Alfabolt</h4>
                         <p class="timeline-meta">Islamabad, Pakistan · Hybrid</p>
-                        <p>Built and optimized backend APIs using Python and Django REST Framework.</p>
-                        <div class="badge-grid compact timeline-tags">
+                        <p class="timeline-desc">Constructed and profiled high-concurrency RESTful APIs using Python and Django REST Framework with relational database query optimization.</p>
+                        <div class="badge-grid">
                             <span class="skill-badge">Python</span>
                             <span class="skill-badge">Django REST Framework</span>
-                            <span class="skill-badge">Backend APIs</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="label-chip accent">May 2025</span>
-                        <h3>Business Development Intern</h3>
-                        <h4>Hybrid Mediaworks</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
-                        <p>Supported business development efforts and communication workflows.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Communication</span>
-                            <span class="skill-badge">Business Development</span>
+                            <span class="skill-badge">PostgreSQL</span>
                         </div>
                     </div>
                 </article>
@@ -431,188 +407,285 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
                         <span class="label-chip accent">Jul 2024 - Sep 2024</span>
-                        <h3>Cloud Intern</h3>
+                        <h3>AWS Cloud Engineer Intern</h3>
                         <h4>EcoEdge AI</h4>
                         <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
-                        <p>Designed serverless workflows using AWS Lambda, API Gateway, S3, and SNS to automate complex data pipelines.</p>
-                        <div class="badge-grid compact timeline-tags">
+                        <p class="timeline-desc">Designed serverless event-driven workflows leveraging AWS Lambda, API Gateway, S3, and SNS to automate unstructured data processing.</p>
+                        <div class="badge-grid">
                             <span class="skill-badge">AWS Lambda</span>
                             <span class="skill-badge">API Gateway</span>
-                            <span class="skill-badge">S3</span>
-                            <span class="skill-badge">SNS</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="label-chip accent">Feb 2020 - Jun 2022</span>
-                        <h3>Professional Freelancer</h3>
-                        <h4>Fiverr</h4>
-                        <p class="timeline-meta">Remote</p>
-                        <p>Delivered freelance work across Python-based programming tasks and client requirements.</p>
-                        <div class="badge-grid compact timeline-tags">
-                            <span class="skill-badge">Python</span>
-                            <span class="skill-badge">Freelancing</span>
-                            <span class="skill-badge">Client Delivery</span>
+                            <span class="skill-badge">Amazon S3</span>
+                            <span class="skill-badge">Amazon SNS</span>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
 
+        <!-- Projects Section (6 Systems Flagships with Custom Architecture SVGs) -->
         <section class="section-shell" id="projects">
             <div class="section-head reveal">
-                <p class="eyebrow">Projects</p>
-                <h2>Engineering Grid</h2>
+                <p class="eyebrow">Systems &amp; Architecture</p>
+                <h2>Featured Projects</h2>
             </div>
             <div class="projects-grid">
+                <!-- Project 1: SehatKosh -->
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
-                        <span>Subscription Billing</span>
+                        <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background Grid -->
+                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
+                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <!-- Node 1: OCR / Ingest -->
+                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
+                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Prescription</text>
+                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">OCR / Vision</text>
+                            <!-- Arrow 1 -->
+                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 3"/>
+                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <!-- Node 2: Clinical Parser -->
+                            <rect x="132" y="45" width="95" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
+                            <text x="179" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">NLP Parser</text>
+                            <text x="179" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">LOINC/SNOMED</text>
+                            <!-- Arrow 2 -->
+                            <path d="M227 70H252" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="252,67 258,70 252,73" fill="#3B82F6"/>
+                            <!-- Node 3: FHIR Standardizer -->
+                            <rect x="259" y="45" width="92" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
+                            <text x="305" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">HL7 FHIR</text>
+                            <text x="305" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">R4 Schemas</text>
+                            <!-- Arrow 3 -->
+                            <path d="M351 70H376" stroke="#10B981" stroke-width="1.5"/>
+                            <polygon points="376,67 382,70 376,73" fill="#10B981"/>
+                            <!-- Node 4: Neo4j Graph -->
+                            <rect x="383" y="45" width="62" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
+                            <circle cx="414" cy="63" r="7" fill="none" stroke="#10B981" stroke-width="1.5"/>
+                            <text x="414" y="84" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Neo4j</text>
+                        </svg>
                     </div>
                     <div class="project-body">
-                        <p class="project-kind">Web3 Platform</p>
-                        <h3>Subscription Billing System</h3>
-                        <p>A secure, gas-optimized on-chain subscription billing platform built with Solidity and a Next.js App Router frontend.</p>
+                        <p class="project-kind">Cloud &amp; Healthcare AI</p>
+                        <h3>SehatKosh — Cloud Clinical Data Pipeline</h3>
+                        <p>Cloud-native pipeline parsing unstructured handwritten medical prescriptions and diagnostic reports into standardized HL7 FHIR R4 schemas, LOINC/SNOMED ontologies, and Neo4j graph relationships.</p>
                         <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Subscription-Billing-System" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://subscription-billing-system.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo" target="_blank" rel="noreferrer">GitHub</a>
+                            <a class="button button-primary button-small" href="https://sehatkosh-donor-web.pages.dev" target="_blank" rel="noreferrer">Donor Portal ↗</a>
                         </div>
                     </div>
                 </article>
+
+                <!-- Project 2: DevOps Repo Auditor -->
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
-                        <span>PrepSpace</span>
+                        <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
+                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <!-- Node 1: Git Cloner -->
+                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
+                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Git Cloner</text>
+                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">AST Scanner</text>
+                            <!-- Arrow 1 -->
+                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <!-- Node 2: Agent DAG -->
+                            <rect x="132" y="45" width="100" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
+                            <text x="182" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Gemini Agent</text>
+                            <text x="182" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Audit Pipeline</text>
+                            <!-- Arrow 2 -->
+                            <path d="M232 70H257" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="257,67 263,70 257,73" fill="#3B82F6"/>
+                            <!-- Node 3: Pydantic Schema -->
+                            <rect x="264" y="45" width="90" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
+                            <text x="309" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Pydantic V2</text>
+                            <text x="309" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Validation</text>
+                            <!-- Arrow 3 -->
+                            <path d="M354 70H379" stroke="#10B981" stroke-width="1.5"/>
+                            <polygon points="379,67 385,70 379,73" fill="#10B981"/>
+                            <!-- Node 4: Streamlit UI -->
+                            <rect x="386" y="45" width="59" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
+                            <text x="415" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Streamlit</text>
+                            <text x="415" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Report</text>
+                        </svg>
                     </div>
                     <div class="project-body">
-                        <p class="project-kind">AI Application</p>
-                        <h3>Reading Comprehension &amp; Quiz Generation System (PrepSpace)</h3>
-                        <p>AI-powered application that generates reading comprehension passages and automatically creates quizzes using NLP.</p>
+                        <p class="project-kind">Agentic AI</p>
+                        <h3>Autonomous DevOps Repo Auditor</h3>
+                        <p>Automated repository auditing agent engineered with Python, Gemini API, Pydantic V2, and Streamlit Cloud to analyze codebases and generate structured engineering reports.</p>
                         <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Reading-Comprehension-and-Quiz-Generation-System" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://prepspace.streamlit.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                            <a class="button button-primary button-small" href="https://repo-auditor-agent.streamlit.app" target="_blank" rel="noreferrer">Live Demo ↗</a>
                         </div>
                     </div>
                 </article>
+
+                <!-- Project 3: FASTable -->
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
-                        <span>FASTable</span>
+                        <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
+                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <!-- Node 1: Electives Matrix -->
+                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
+                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">FAST Batches</text>
+                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Electives In</text>
+                            <!-- Arrow 1 -->
+                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <!-- Node 2: Clash Engine -->
+                            <rect x="132" y="45" width="100" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
+                            <text x="182" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Clash Solver</text>
+                            <text x="182" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Graph Matching</text>
+                            <!-- Arrow 2 -->
+                            <path d="M232 70H257" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="257,67 263,70 257,73" fill="#3B82F6"/>
+                            <!-- Node 3: Schedule API -->
+                            <rect x="264" y="45" width="90" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
+                            <text x="309" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">REST Engine</text>
+                            <text x="309" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Streamlit API</text>
+                            <!-- Arrow 3 -->
+                            <path d="M354 70H379" stroke="#10B981" stroke-width="1.5"/>
+                            <polygon points="379,67 385,70 379,73" fill="#10B981"/>
+                            <!-- Node 4: Web & Android Client -->
+                            <rect x="386" y="45" width="59" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
+                            <text x="415" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Android</text>
+                            <text x="415" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">&amp; Web UI</text>
+                        </svg>
                     </div>
                     <div class="project-body">
-                        <p class="project-kind">Android &amp; Backend</p>
-                        <h3>FASTable (Android &amp; Backend)</h3>
-                        <p>Intelligent timetable generator for FAST-NUCES students featuring clash detection, elective support, and schedule customization.</p>
+                        <p class="project-kind">Full-Stack &amp; Android</p>
+                        <h3>FASTable — Multi-Batch Timetable Engine</h3>
+                        <p>Automated schedule generator and conflict-detection engine for FAST-NUCES students supporting elective combinations and real-time clash resolution across Web and Android interfaces.</p>
                         <div class="project-actions">
                             <a class="button button-secondary button-small" href="https://github.com/AHSANooo/FASTable" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://www.fastable.site/" target="_blank" rel="noreferrer">Live Demo</a>
+                            <a class="button button-primary button-small" href="https://www.fastable.site/" target="_blank" rel="noreferrer">Live App ↗</a>
                         </div>
                     </div>
                 </article>
+
+                <!-- Project 4: On-Chain Subscription Billing -->
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
-                        <span>Timetable Backend</span>
+                        <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
+                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <!-- Node 1: Next.js Client -->
+                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
+                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Next.js</text>
+                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">App Router</text>
+                            <!-- Arrow 1 -->
+                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <!-- Node 2: Web3 Provider -->
+                            <rect x="132" y="45" width="95" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
+                            <text x="179" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Ethers.js</text>
+                            <text x="179" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Provider</text>
+                            <!-- Arrow 2 -->
+                            <path d="M227 70H252" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="252,67 258,70 252,73" fill="#3B82F6"/>
+                            <!-- Node 3: Solidity Contract -->
+                            <rect x="259" y="45" width="98" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
+                            <text x="308" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Solidity</text>
+                            <text x="308" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Gas Optimized</text>
+                            <!-- Arrow 3 -->
+                            <path d="M357 70H382" stroke="#10B981" stroke-width="1.5"/>
+                            <polygon points="382,67 388,70 382,73" fill="#10B981"/>
+                            <!-- Node 4: On-Chain Billing -->
+                            <rect x="389" y="45" width="56" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
+                            <text x="417" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Vault</text>
+                            <text x="417" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Settle</text>
+                        </svg>
                     </div>
                     <div class="project-body">
-                        <p class="project-kind">Backend Infrastructure</p>
-                        <h3>Timetable Project (FASTable Backend)</h3>
-                        <p>Backend infrastructure for timetable generation.</p>
+                        <p class="project-kind">Web3 / Solidity</p>
+                        <h3>On-Chain Subscription Billing System</h3>
+                        <p>Gas-optimized smart contract recurring billing protocol built with Solidity and a Next.js App Router frontend for trustless, automated on-chain payments.</p>
                         <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Timetable-Project" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://nuces-isb-timetable.streamlit.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Subscription-Billing-System" target="_blank" rel="noreferrer">GitHub</a>
+                            <a class="button button-primary button-small" href="https://subscription-billing-system.vercel.app/" target="_blank" rel="noreferrer">Live Demo ↗</a>
                         </div>
                     </div>
                 </article>
+
+                <!-- Project 5: PrepSpace -->
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
-                        <span>Clashes Detector</span>
+                        <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
+                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <!-- Node 1: Passage Ingest -->
+                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
+                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Passage Ingest</text>
+                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Raw Corpora</text>
+                            <!-- Arrow 1 -->
+                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <!-- Node 2: NLP Tokenizer -->
+                            <rect x="132" y="45" width="95" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
+                            <text x="179" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">NLP Pipeline</text>
+                            <text x="179" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Tokenize &amp; Embed</text>
+                            <!-- Arrow 2 -->
+                            <path d="M227 70H252" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="252,67 258,70 252,73" fill="#3B82F6"/>
+                            <!-- Node 3: Question Generator -->
+                            <rect x="259" y="45" width="98" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
+                            <text x="308" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Q/A Engine</text>
+                            <text x="308" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Distractor Gen</text>
+                            <!-- Arrow 3 -->
+                            <path d="M357 70H382" stroke="#10B981" stroke-width="1.5"/>
+                            <polygon points="382,67 388,70 382,73" fill="#10B981"/>
+                            <!-- Node 4: Streamlit UI -->
+                            <rect x="389" y="45" width="56" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
+                            <text x="417" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Quiz</text>
+                            <text x="417" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">App</text>
+                        </svg>
                     </div>
                     <div class="project-body">
-                        <p class="project-kind">Productivity Tool</p>
-                        <h3>Clashes Detector</h3>
-                        <p>Standalone timetable clash detection tool that identifies schedule conflicts for FAST students.</p>
+                        <p class="project-kind">Applied NLP</p>
+                        <h3>PrepSpace — NLP Comprehension &amp; Quiz Engine</h3>
+                        <p>Automated reading comprehension passage generator and dynamic quiz builder powered by NLP pipelines for automated learning assessments.</p>
                         <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Clashes-Detector" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://clashes-detector-dvam.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Reading-Comprehension-and-Quiz-Generation-System" target="_blank" rel="noreferrer">GitHub</a>
+                            <a class="button button-primary button-small" href="https://prepspace.streamlit.app/" target="_blank" rel="noreferrer">Live Demo ↗</a>
                         </div>
                     </div>
                 </article>
+
+                <!-- Project 6: Thermal Image Human Detection -->
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
-                        <span>Sorting Visualizer</span>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-kind">C++ / SFML</p>
-                        <h3>Sorting Visualizer</h3>
-                        <p>Interactive C++ visualization tool demonstrating multiple sorting algorithms. Built using SFML.</p>
-                        <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Sorting-Visualizer" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://www.youtube.com/watch?v=rwT5jgM-HlQ&amp;feature=youtu.be" target="_blank" rel="noreferrer">Live Demo</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card reveal">
-                    <div class="project-visual" aria-hidden="true">
-                        <span>Plants vs Zombies</span>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-kind">C++ / SFML Game</p>
-                        <h3>Plants vs Zombies (C++ SFML)</h3>
-                        <p>Complete recreation of Plants vs. Zombies in C++ using SFML with OOP architecture.</p>
-                        <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Plants-vs-Zombies-Game-CPP" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://www.youtube.com/watch?v=IPXCAc4Vuzg&amp;feature=youtu.be" target="_blank" rel="noreferrer">Live Demo</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card reveal">
-                    <div class="project-visual" aria-hidden="true">
-                        <span>Centipede Game</span>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-kind">C++ / SFML Game</p>
-                        <h3>Centipede Game Project</h3>
-                        <p>2D arcade-style Centipede game implemented in C++ with SFML.</p>
-                        <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Centipede-Game-Project" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://www.youtube.com/watch?v=Fkm6LovkM2M&amp;feature=youtu.be" target="_blank" rel="noreferrer">Live Demo</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card reveal">
-                    <div class="project-visual" aria-hidden="true">
-                        <span>KFC API</span>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-kind">FastAPI Backend</p>
-                        <h3>KFC Management API</h3>
-                        <p>RESTful backend built with FastAPI for managing products, inventory, customers, and orders.</p>
-                        <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/KFC-Management-API" target="_blank" rel="noreferrer">GitHub</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card reveal">
-                    <div class="project-visual" aria-hidden="true">
-                        <span>SmartDukaan</span>
-                    </div>
-                    <div class="project-body">
-                        <p class="project-kind">Android App</p>
-                        <h3>SmartDukaan</h3>
-                        <p>Android inventory management application for small businesses.</p>
-                        <div class="project-actions">
-                            <a class="button button-secondary button-small" href="https://github.com/AHSANooo/SmartDukaan" target="_blank" rel="noreferrer">GitHub</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card reveal">
-                    <div class="project-visual" aria-hidden="true">
-                        <span>Thermal Detection</span>
+                        <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
+                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <!-- Node 1: IR Sensor Feed -->
+                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
+                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">IR Thermal</text>
+                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Raw Frames</text>
+                            <!-- Arrow 1 -->
+                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <!-- Node 2: DIP Preprocessor -->
+                            <rect x="132" y="45" width="95" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
+                            <text x="179" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">OpenCV Filter</text>
+                            <text x="179" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Thresholding</text>
+                            <!-- Arrow 2 -->
+                            <path d="M227 70H252" stroke="#3B82F6" stroke-width="1.5"/>
+                            <polygon points="252,67 258,70 252,73" fill="#3B82F6"/>
+                            <!-- Node 3: Contour Classifier -->
+                            <rect x="259" y="45" width="98" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
+                            <text x="308" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Silhouette</text>
+                            <text x="308" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Contour Analysis</text>
+                            <!-- Arrow 3 -->
+                            <path d="M357 70H382" stroke="#10B981" stroke-width="1.5"/>
+                            <polygon points="382,67 388,70 382,73" fill="#10B981"/>
+                            <!-- Node 4: Target Bounding Box -->
+                            <rect x="389" y="45" width="56" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
+                            <text x="417" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">BBox</text>
+                            <text x="417" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Detect</text>
+                        </svg>
                     </div>
                     <div class="project-body">
                         <p class="project-kind">Computer Vision</p>
                         <h3>Thermal Image Human Detection</h3>
-                        <p>Digital Image Processing project that detects human silhouettes from thermal images using OpenCV.</p>
+                        <p>Digital image processing pipeline detecting human silhouettes in thermal infrared imagery using OpenCV morphological operations and contour analysis.</p>
                         <div class="project-actions">
                             <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Thermal-Image-Human-Detection" target="_blank" rel="noreferrer">GitHub</a>
                         </div>
@@ -621,38 +694,30 @@
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section class="section-shell" id="contact">
             <div class="section-head reveal">
-                <p class="eyebrow">Contact</p>
-                <h2>Reach Out</h2>
+                <p class="eyebrow">Communication</p>
+                <h2>Contact</h2>
             </div>
             <div class="contact-cta reveal">
                 <div class="contact-intro">
                     <p class="contact-kicker">Open to high-impact engineering collaborations.</p>
-                    <p>For backend systems, cloud-native builds, intelligent automation, and product execution, connect through any channel below.</p>
+                    <p>For backend systems, cloud-native builds, distributed clinical pipelines, or intelligent automation, reach out directly through any channel below.</p>
                 </div>
                 <div class="contact-list" aria-label="Primary contact links">
                     <a class="contact-link-card" href="mailto:ahsankhetran72@gmail.com" aria-label="Send email to ahsankhetran72@gmail.com">
                         <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.12-.22 6.47 4.72a.7.7 0 0 0 .82 0l6.47-4.72a1.26 1.26 0 0 0-.63-.17H5.75c-.22 0-.44.06-.63.17Z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"></path></svg>
                         </span>
                         <span class="contact-copy">
                             <span class="contact-title">Email</span>
                             <span class="contact-value">ahsankhetran72@gmail.com</span>
                         </span>
                     </a>
-                    <a class="contact-link-card" href="tel:03108155143" aria-label="Call 03108155143">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><path d="M6.56 3.47a1 1 0 0 1 1.06-.24l3.02 1.01a1 1 0 0 1 .67.95v2.57a1 1 0 0 1-.57.9l-1.5.74a14.76 14.76 0 0 0 5.35 5.35l.74-1.5a1 1 0 0 1 .9-.57h2.57a1 1 0 0 1 .95.67l1.01 3.02a1 1 0 0 1-.24 1.06l-1.64 1.64a2 2 0 0 1-1.98.49A19.75 19.75 0 0 1 4.45 7.09a2 2 0 0 1 .49-1.98l1.62-1.64Z"></path></svg>
-                        </span>
-                        <span class="contact-copy">
-                            <span class="contact-title">Phone</span>
-                            <span class="contact-value">03108155143</span>
-                        </span>
-                    </a>
                     <a class="contact-link-card" href="https://www.linkedin.com/in/mahsan-cs" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile in new tab">
                         <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><path d="M5.5 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM4 9h3v11H4V9Zm6 0h2.88v1.57h.04c.4-.76 1.38-1.57 2.85-1.57 3.04 0 3.61 2 3.61 4.6V20h-3v-5.04c0-1.2-.02-2.74-1.67-2.74-1.67 0-1.93 1.3-1.93 2.65V20h-3V9Z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.49 2.49 0 1 0 0 4.98 2.49 2.49 0 0 0 0-4.98zM3 8.98h3.95V21H3V8.98zm7.2 0h3.79v1.64h.05c.53-1.01 1.83-2.08 3.76-2.08 4.02 0 4.76 2.64 4.76 6.06V21h-3.95v-5.39c0-1.29-.03-2.96-1.8-2.96-1.8 0-2.07 1.41-2.07 2.87V21h-3.94V8.98z"></path></svg>
                         </span>
                         <span class="contact-copy">
                             <span class="contact-title">LinkedIn</span>
@@ -661,7 +726,7 @@
                     </a>
                     <a class="contact-link-card" href="https://github.com/AHSANooo" target="_blank" rel="noreferrer" aria-label="Open GitHub profile in new tab">
                         <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.36-1.2-3.36-1.2-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.6.07-.6 1 .07 1.52 1.02 1.52 1.02.89 1.54 2.35 1.1 2.93.84.1-.66.35-1.1.64-1.35-2.22-.26-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.56 1.41.21 2.46.1 2.71.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.69-4.57 4.95.36.31.68.92.68 1.87v2.78c0 .26.18.57.69.48A10 10 0 0 0 12 2Z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.5c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.19-3.37-1.19-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.61.07-.61 1 .07 1.52 1.03 1.52 1.03.9 1.54 2.37 1.1 2.95.84.09-.66.35-1.1.63-1.36-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.42.2 2.46.1 2.72.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.93.68 1.88v2.78c0 .26.18.58.69.48A10 10 0 0 0 12 2z"></path></svg>
                         </span>
                         <span class="contact-copy">
                             <span class="contact-title">GitHub</span>
@@ -675,12 +740,11 @@
 
     <footer class="footer">
         <div class="footer-inner">
-            <p>© 2026 Muhammad Ahsan. Built for output, optimization, and scale.</p>
+            <p>© 2026 Muhammad Ahsan. Built for deterministic output, cloud performance, and scalable architecture.</p>
             <div class="footer-links" aria-label="Footer social links">
                 <a href="https://github.com/AHSANooo" target="_blank" rel="noreferrer">GitHub</a>
                 <a href="https://www.linkedin.com/in/mahsan-cs" target="_blank" rel="noreferrer">LinkedIn</a>
                 <a href="mailto:ahsankhetran72@gmail.com">Email</a>
-                <a href="tel:03108155143">Phone</a>
             </div>
         </div>
     </footer>
