@@ -1,47 +1,51 @@
-# Muhammad Ahsan — Personal Portfolio
+# Muhammad Ahsan — Systems Engineering Portfolio
 
-A sleek, responsive personal portfolio website showcasing engineering projects, academic background, technical skills, and experience.
+A high-performance, responsive portfolio showcasing backend systems, cloud-native architectures, distributed clinical pipelines, and agentic AI developer tooling.
 
-## 🚀 Tech Stack
+## 🚀 Tech Stack & Design System
 
-- **HTML5** — Semantic, accessible structure
-- **CSS3** — Custom modern dark theme, responsive grid/flexbox layouts, and smooth animations
-- **JavaScript (ES6+)** — Interactive navigation, intersection observer scroll effects, and dynamic UI
+- **HTML5** — Semantic, SEO-optimized markup with Open Graph, Twitter Cards, and schema.org `Person` JSON-LD structured data.
+- **CSS3** — Obsidian slate high-contrast palette (`#090C10`, `#11161F`, `#3B82F6`), `JetBrains Mono` / `Space Grotesk` typography, zero GPU-heavy blur bottlenecks.
+- **JavaScript (ES6+)** — Lightweight `IntersectionObserver` reveal animations, active section spy, and accessible drawer navigation.
+- **Vector Graphics** — Inline SVG system architecture pipeline diagrams and custom geometric monogram.
 
 ## 📂 Project Structure
 
 ```text
-├── index.html          # Main portfolio markup & sections
-├── style.css           # Custom styles & design tokens
-├── script.js           # Client-side interactions & animations
-├── Profile Picture.png # Profile photo
-├── vercel.json         # Vercel deployment configuration
+├── index.html          # Semantic portfolio markup, JSON-LD, & SVG architecture diagrams
+├── style.css           # High-contrast slate design system & typography tokens
+├── script.js           # Lightweight scroll observers & accessible interactions
+├── profile.webp        # Optimized square portrait (<15 KB WebP)
+├── favicon.svg         # Crisp geometric MA monogram favicon
+├── og-card.png         # 1200x630 social preview card (Open Graph / Twitter)
+├── robots.txt          # Crawler instructions & sitemap link
+├── sitemap.xml         # XML sitemap for Google Search Console
+├── vercel.json         # Clean URLs & immutable static asset caching
 └── Readme.md           # Project documentation
 ```
 
 ## 💻 Running Locally
 
-No build step or dependencies required.
+No build step or dependencies required:
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/AHSANooo/Portfolio.git
    ```
-2. Open `index.html` directly in any web browser, or serve it using a local HTTP server:
+2. Open `index.html` directly in any web browser, or serve it using any local HTTP server:
    ```bash
    npx serve .
    ```
 
-## 🌐 Deployment
+## 🌐 Deployment & Indexing
 
-The repository is configured for instant deployment on platforms like [Vercel](https://vercel.com):
+Configured for immediate deployment on [Vercel](https://vercel.com):
+- Static caching headers configured in `vercel.json` for `.css`, `.js`, `.svg`, and `.webp` assets.
+- `robots.txt` and `sitemap.xml` configured for Google Search Console domain verification.
 
-1. Import the repository into Vercel.
-2. The included `vercel.json` configures the root directory and clean URL routing automatically.
-3. Deploy with zero additional build settings.
+## 📬 Contact & Profiles
 
-## 📬 Contact
-
+- **Website**: [mahsan-cs.me](https://www.mahsan-cs.me/)
 - **GitHub**: [github.com/AHSANooo](https://github.com/AHSANooo)
 - **LinkedIn**: [linkedin.com/in/mahsan-cs](https://www.linkedin.com/in/mahsan-cs)
 - **Email**: ahsankhetran72@gmail.com
