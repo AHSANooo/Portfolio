@@ -136,6 +136,7 @@ a {
     align-items: center;
     justify-content: center;
     transition: transform 150ms ease;
+    flex-shrink: 0;
 }
 
 .nav-brand:hover {
@@ -211,18 +212,21 @@ a {
 }
 
 .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border);
     background: var(--surface);
     color: var(--text);
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     padding: 0;
-    transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease, transform 150ms ease;
+    transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .theme-toggle:hover {
@@ -235,30 +239,31 @@ a {
 .theme-toggle svg {
     width: 20px;
     height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     fill: none;
     stroke: currentColor;
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    display: block;
 }
 
 /* Default Light Theme: show Moon icon to switch to Dark */
 .theme-toggle .icon-sun {
-    display: none;
+    display: none !important;
 }
 
 .theme-toggle .icon-moon {
-    display: block;
+    display: block !important;
 }
 
 /* Dark Theme ([data-theme="dark"]): show Sun icon to switch to Light */
 [data-theme="dark"] .theme-toggle .icon-sun {
-    display: block;
+    display: block !important;
 }
 
 [data-theme="dark"] .theme-toggle .icon-moon {
-    display: none;
+    display: none !important;
 }
 
 .hamburger {

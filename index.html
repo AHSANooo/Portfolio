@@ -10,13 +10,130 @@
     <meta name="author" content="Muhammad Ahsan">
     <meta name="theme-color" content="#F8FAFC">
 
-    <!-- Anti-flicker theme initialization (defaults to light mode) -->
+    <!-- Anti-flicker theme initialization (strictly defaults to crisp daylight mode) -->
     <script>
         (function () {
-            var stored = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', stored);
+            try {
+                // If portfolio_theme_v3 is not set, force clean migration to 'light'
+                // clearing any old 'dark' stored from previous iterations
+                var saved = localStorage.getItem('portfolio_theme_v3');
+                if (!saved) {
+                    localStorage.removeItem('theme');
+                    localStorage.removeItem('portfolio_theme_v2');
+                    localStorage.setItem('portfolio_theme_v3', 'light');
+                    saved = 'light';
+                }
+                if (saved === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                }
+            } catch (e) {
+                document.documentElement.removeAttribute('data-theme');
+            }
         })();
+
+        function toggleTheme() {
+            try {
+                var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                var next = isDark ? 'light' : 'dark';
+                if (next === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                }
+                try {
+                    localStorage.setItem('portfolio_theme_v3', next);
+                    localStorage.setItem('theme', next);
+                } catch (err) {}
+                var meta = document.querySelector('meta[name="theme-color"]');
+                if (meta) {
+                    meta.setAttribute('content', next === 'dark' ? '#1E293B' : '#F8FAFC');
+                }
+            } catch (err) {
+                console.error('Theme toggle failed:', err);
+            }
+        }
     </script>
+
+    <!-- Critical CSS for instant rendering and cache immunity -->
+    <style>
+        :root {
+            --bg: #F8FAFC;
+            --bg-elevated: #F1F5F9;
+            --surface: #FFFFFF;
+            --surface-hover: #F8FAFC;
+            --border: #E2E8F0;
+            --border-strong: #CBD5E1;
+            --accent: #2563EB;
+            --accent-hover: #1D4ED8;
+            --text: #0F172A;
+            --text-muted: #475569;
+            --text-dim: #64748B;
+            --navbar-bg: rgba(248, 250, 252, 0.86);
+        }
+        [data-theme="dark"] {
+            --bg: #1E293B;
+            --bg-elevated: #172033;
+            --surface: #263349;
+            --surface-hover: #2E3D57;
+            --border: #334155;
+            --border-strong: #475569;
+            --accent: #3B82F6;
+            --accent-hover: #60A5FA;
+            --text: #F8FAFC;
+            --text-muted: #CBD5E1;
+            --text-dim: #94A3B8;
+            --navbar-bg: rgba(30, 41, 59, 0.86);
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        .theme-toggle {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 40px !important;
+            height: 40px !important;
+            min-width: 40px !important;
+            min-height: 40px !important;
+            padding: 0 !important;
+            border-radius: 6px !important;
+            border: 1px solid var(--border) !important;
+            background: var(--surface) !important;
+            color: var(--text) !important;
+            cursor: pointer !important;
+            flex-shrink: 0 !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+        }
+        .theme-toggle:hover {
+            background: var(--surface-hover) !important;
+            color: var(--accent) !important;
+            border-color: var(--border-strong) !important;
+        }
+        .theme-toggle svg {
+            width: 20px !important;
+            height: 20px !important;
+            min-width: 20px !important;
+            min-height: 20px !important;
+            stroke: currentColor !important;
+            fill: none !important;
+        }
+        .theme-toggle .icon-sun {
+            display: none !important;
+        }
+        .theme-toggle .icon-moon {
+            display: block !important;
+        }
+        [data-theme="dark"] .theme-toggle .icon-sun {
+            display: block !important;
+        }
+        [data-theme="dark"] .theme-toggle .icon-moon {
+            display: none !important;
+        }
+    </style>
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.mahsan-cs.me/">
@@ -42,8 +159,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Stylesheet with cache-busting -->
+    <link rel="stylesheet" href="style.css?v=20261117_v4">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -70,10 +187,10 @@
         <div class="nav-container">
             <a class="nav-brand" href="#home" aria-label="Muhammad Ahsan Home">
                 <svg viewBox="0 0 36 36" width="36" height="36" fill="none" aria-hidden="true">
-                    <rect class="brand-bg" width="36" height="36" rx="8"/>
-                    <path class="brand-m" d="M7.5 25.5V10.5L13.5 19L19.5 10.5V25.5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="brand-a" d="M19.5 25.5L24 10.5L28.5 25.5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path class="brand-a-cross" d="M21 20.5H27" stroke-width="2" stroke-linecap="round"/>
+                    <rect class="brand-bg" width="36" height="36" rx="8" fill="var(--surface, #FFFFFF)" stroke="var(--border-strong, #CBD5E1)" stroke-width="1.5"/>
+                    <path class="brand-m" d="M7.5 25.5V10.5L13.5 19L19.5 10.5V25.5" stroke="var(--text, #0F172A)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="brand-a" d="M19.5 25.5L24 10.5L28.5 25.5" stroke="var(--accent, #2563EB)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="brand-a-cross" d="M21 20.5H27" stroke="var(--accent, #2563EB)" stroke-width="2" stroke-linecap="round"/>
                 </svg>
             </a>
             <nav class="nav-menu" id="navMenu" aria-label="Primary">
@@ -86,8 +203,8 @@
                 <a class="nav-link" href="#contact">Contact</a>
             </nav>
             <div class="nav-controls">
-                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
-                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme" onclick="toggleTheme()" style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;min-width:40px;min-height:40px;padding:0;border-radius:6px;border:1px solid var(--border,#CBD5E1);background:var(--surface,#FFFFFF);color:var(--text,#0F172A);cursor:pointer;flex-shrink:0;">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
                         <circle cx="12" cy="12" r="5"></circle>
                         <line x1="12" y1="1" x2="12" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -98,7 +215,7 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block;">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
                 </button>
@@ -775,7 +892,7 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js?v=20261117_v4" defer></script>
 </body>
 
 </html>
