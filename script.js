@@ -1,11 +1,17 @@
-// Theme Initialization (runs immediately to set up state)
+// Theme Initialization (synchronizes with inline head script defaulting to daylight mode)
 function initTheme() {
-    const storedTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', storedTheme);
-    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
-    if (themeColorMeta) {
-        themeColorMeta.setAttribute('content', storedTheme === 'dark' ? '#1E293B' : '#F8FAFC');
-    }
+    try {
+        const storedTheme = localStorage.getItem('portfolio_theme_v3') || 'light';
+        if (storedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+        }
+        const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeColorMeta) {
+            themeColorMeta.setAttribute('content', storedTheme === 'dark' ? '#1E293B' : '#F8FAFC');
+        }
+    } catch (e) {}
 }
 initTheme();
 
@@ -19,16 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
     const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 
-    // Theme Toggle Handler
-    themeToggle?.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', nextTheme);
-        localStorage.setItem('theme', nextTheme);
-        if (themeColorMeta) {
-            themeColorMeta.setAttribute('content', nextTheme === 'dark' ? '#1E293B' : '#F8FAFC');
-        }
-    });
+    // Fail-safe Theme Toggle: inline onclick="toggleTheme()" handles click primarily.
+    // If inline onclick is absent for any reason, add click listener.
+    if (themeToggle && !themeToggle.getAttribute('onclick')) {
+        themeToggle.addEventListener('click', () => {
+            if (typeof window.toggleTheme === 'function') {
+                window.toggleTheme();
+            }
+        });
+    }
 
     // Mobile Drawer Navigation
     function setMobileMenuState(open) {
