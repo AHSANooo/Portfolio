@@ -8,6 +8,15 @@
     <meta name="description" content="Computer Science undergraduate at FAST-NUCES Islamabad (Batch '27). Engineering cloud-native backend architectures, clinical data pipelines, and autonomous developer tooling.">
     <meta name="keywords" content="Muhammad Ahsan, Backend Engineer, Cloud Infrastructure, Agentic AI, FAST-NUCES Islamabad, Python, AWS, Docker, Distributed Systems">
     <meta name="author" content="Muhammad Ahsan">
+    <meta name="theme-color" content="#121824">
+
+    <!-- Anti-flicker theme initialization -->
+    <script>
+        (function () {
+            var stored = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', stored);
+        })();
+    </script>
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.mahsan-cs.me/">
@@ -61,10 +70,10 @@
         <div class="nav-container">
             <a class="nav-brand" href="#home" aria-label="Muhammad Ahsan Home">
                 <svg viewBox="0 0 36 36" width="36" height="36" fill="none" aria-hidden="true">
-                    <rect width="36" height="36" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
-                    <path d="M7.5 25.5V10.5L13.5 19L19.5 10.5V25.5" stroke="#F3F6FA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M19.5 25.5L24 10.5L28.5 25.5" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M21 20.5H27" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                    <rect class="brand-bg" width="36" height="36" rx="8" fill="#1B2436" stroke="#3B4E70" stroke-width="1.5"/>
+                    <path class="brand-m" d="M7.5 25.5V10.5L13.5 19L19.5 10.5V25.5" stroke="#F8FAFC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="brand-a" d="M19.5 25.5L24 10.5L28.5 25.5" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="brand-a-cross" d="M21 20.5H27" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
                 </svg>
             </a>
             <nav class="nav-menu" id="navMenu" aria-label="Primary">
@@ -76,11 +85,29 @@
                 <a class="nav-link" href="#projects">Projects</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </nav>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light or dark theme" title="Toggle theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -89,20 +116,20 @@
         <section class="hero section-shell" id="home">
             <div class="hero-inner">
                 <div class="hero-copy reveal">
-                    <p class="eyebrow">Computer Science • FAST-NUCES Islamabad</p>
+                    <p class="eyebrow">Computer Science &middot; FAST-NUCES Islamabad</p>
                     <h1>Muhammad Ahsan</h1>
                     <div class="hero-focus-tags" aria-label="Core focus areas">
                         <span class="focus-tag">Backend &amp; Cloud Systems</span>
-                        <span class="focus-sep">·</span>
+                        <span class="focus-sep" aria-hidden="true">&middot;</span>
                         <span class="focus-tag">Agentic AI Workflows</span>
-                        <span class="focus-sep">·</span>
+                        <span class="focus-sep" aria-hidden="true">&middot;</span>
                         <span class="focus-tag">Distributed Data Pipelines</span>
                     </div>
                     <p class="hero-description">Computer Science undergraduate at FAST-NUCES Islamabad (Batch '27). Engineering cloud-native backend architectures, clinical data pipelines, and autonomous developer tooling.</p>
                     <div class="hero-actions">
                         <a class="button button-primary" href="#projects">Explore Projects</a>
                         <a class="button button-secondary" href="#contact">Contact</a>
-                        <a class="button button-secondary" href="https://www.linkedin.com/in/mahsan-cs" target="_blank" rel="noreferrer">Resume / CV</a>
+                        <a class="button button-secondary" href="https://github.com/AHSANooo" target="_blank" rel="noreferrer">GitHub Profile &nearr;</a>
                     </div>
                     <div class="social-row" aria-label="Social links">
                         <a class="social-chip" href="https://github.com/AHSANooo" target="_blank" rel="noreferrer" aria-label="GitHub profile">
@@ -138,7 +165,7 @@
                 <div class="about-grid reveal">
                     <article class="metric-card">
                         <div class="metric-stat">73 / 193</div>
-                        <p class="metric-desc">Teams &amp; deps automated via Appium and Selenium test suites for NaSCon '26.</p>
+                        <p class="metric-desc">Teams &amp; 193 participants evaluated via automated Appium and Selenium pipelines at NaSCon '26.</p>
                     </article>
                     <article class="metric-card">
                         <div class="metric-stat">HL7 FHIR R4</div>
@@ -232,7 +259,7 @@
                 </div>
                 <div class="education-content">
                     <div class="label-row">
-                        <span class="label-chip accent">Aug 2023 - Jun 2027</span>
+                        <span class="label-chip accent">Aug 2023 &ndash; Jun 2027</span>
                     </div>
                     <h3>Bachelor of Science in Computer Science</h3>
                     <h4>FAST-NUCES, Islamabad Campus</h4>
@@ -258,7 +285,7 @@
                     <div>
                         <div class="label-row">
                             <span class="label-chip accent">May 2026</span>
-                            <a class="verify-link" href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=ac34bc5597d61b44" target="_blank" rel="noreferrer">Verify ↗</a>
+                            <a class="verify-link" href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=ac34bc5597d61b44" target="_blank" rel="noreferrer">Verify &nearr;</a>
                         </div>
                         <h3>Generative AI Application Developer - Top Performer</h3>
                         <p class="issuer">ULEFUSA / Pak Angels / NCEAC - HEC (Cohort 3)</p>
@@ -270,7 +297,7 @@
                     <div>
                         <div class="label-row">
                             <span class="label-chip accent">Feb 2025</span>
-                            <a class="verify-link" href="https://www.credly.com/go/D6zMZlQZBmaYBvdms8a89A" target="_blank" rel="noreferrer">Verify ↗</a>
+                            <a class="verify-link" href="https://www.credly.com/go/D6zMZlQZBmaYBvdms8a89A" target="_blank" rel="noreferrer">Verify &nearr;</a>
                         </div>
                         <h3>AWS Educate Getting Started with Storage</h3>
                         <p class="issuer">Amazon Web Services (AWS)</p>
@@ -282,7 +309,7 @@
                     <div>
                         <div class="label-row">
                             <span class="label-chip accent">Feb 2025</span>
-                            <a class="verify-link" href="https://www.credly.com/badges/522301fd-e6ce-4f8e-ac6f-147fad90d8d9/linked_in_profile" target="_blank" rel="noreferrer">Verify ↗</a>
+                            <a class="verify-link" href="https://www.credly.com/badges/522301fd-e6ce-4f8e-ac6f-147fad90d8d9/linked_in_profile" target="_blank" rel="noreferrer">Verify &nearr;</a>
                         </div>
                         <h3>AWS Educate Introduction to Cloud 101</h3>
                         <p class="issuer">Amazon Web Services (AWS)</p>
@@ -294,7 +321,7 @@
                     <div>
                         <div class="label-row">
                             <span class="label-chip accent">Jan 2024</span>
-                            <a class="verify-link" href="https://www.hackerrank.com/certificates/40d08d720a71" target="_blank" rel="noreferrer">Verify ↗</a>
+                            <a class="verify-link" href="https://www.hackerrank.com/certificates/40d08d720a71" target="_blank" rel="noreferrer">Verify &nearr;</a>
                         </div>
                         <h3>Problem Solving Certificate</h3>
                         <p class="issuer">HackerRank</p>
@@ -315,10 +342,10 @@
                 <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="label-chip accent">Jun 2026 - Aug 2026</span>
+                        <span class="label-chip accent">Jun 2026 &ndash; Aug 2026</span>
                         <h3>Global Volunteer</h3>
                         <h4>AIESEC in Egypt</h4>
-                        <p class="timeline-meta">Cairo, Egypt · On-site</p>
+                        <p class="timeline-meta">Cairo, Egypt &middot; On-site</p>
                         <p class="timeline-desc">Engineered targeted data-backed outreach and localized development strategies to foster sustainable economic systems.</p>
                         <div class="badge-grid">
                             <span class="skill-badge">Cross-Border Operations</span>
@@ -330,10 +357,10 @@
                 <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="label-chip accent">Feb 2026 - Oct 2026</span>
+                        <span class="label-chip accent">Feb 2026 &ndash; Oct 2026</span>
                         <h3>Head of App Dev Team</h3>
                         <h4>NaSCon '26</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
+                        <p class="timeline-meta">Islamabad, Pakistan &middot; On-site</p>
                         <p class="timeline-desc">Directed technical infrastructure and automated test harnesses (Appium and Selenium) managing 73 teams and 193 participants across all event systems.</p>
                         <div class="badge-grid">
                             <span class="skill-badge">Appium</span>
@@ -346,10 +373,10 @@
                 <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="label-chip accent">Feb 2026 - Present</span>
+                        <span class="label-chip accent">Feb 2026 &ndash; Present</span>
                         <h3>Lab Demonstrator</h3>
                         <h4>FAST-NUCES</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
+                        <p class="timeline-meta">Islamabad, Pakistan &middot; On-site</p>
                         <p class="timeline-desc">Instructed undergraduate lab sessions in Database Systems and Computer Networks, guiding query optimization, normalization, and protocol routing.</p>
                         <div class="badge-grid">
                             <span class="skill-badge">Database Systems</span>
@@ -361,7 +388,7 @@
                 <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="label-chip accent">Jan 2026 - Apr 2026</span>
+                        <span class="label-chip accent">Jan 2026 &ndash; Apr 2026</span>
                         <h3>Chief Technology Architect</h3>
                         <h4>Prime Innovators</h4>
                         <p class="timeline-meta">Remote</p>
@@ -376,10 +403,10 @@
                 <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="label-chip accent">Nov 2025 - Present</span>
+                        <span class="label-chip accent">Nov 2025 &ndash; Present</span>
                         <h3>Head of Cloud Team</h3>
                         <h4>Google Developer Groups (GDG) FAST Islamabad</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
+                        <p class="timeline-meta">Islamabad, Pakistan &middot; On-site</p>
                         <p class="timeline-desc">Orchestrated cloud computing workshops and architectural labs covering Google Cloud Platform (GCP), containers, and agile delivery.</p>
                         <div class="badge-grid">
                             <span class="skill-badge">Google Cloud (GCP)</span>
@@ -391,10 +418,10 @@
                 <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="label-chip accent">Jun 2025 - Aug 2025</span>
+                        <span class="label-chip accent">Jun 2025 &ndash; Aug 2025</span>
                         <h3>Backend Developer Intern</h3>
                         <h4>Alfabolt</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · Hybrid</p>
+                        <p class="timeline-meta">Islamabad, Pakistan &middot; Hybrid</p>
                         <p class="timeline-desc">Constructed and profiled high-concurrency RESTful APIs using Python and Django REST Framework with relational database query optimization.</p>
                         <div class="badge-grid">
                             <span class="skill-badge">Python</span>
@@ -406,10 +433,10 @@
                 <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
                     <div class="timeline-card">
-                        <span class="label-chip accent">Jul 2024 - Sep 2024</span>
+                        <span class="label-chip accent">Jul 2024 &ndash; Sep 2024</span>
                         <h3>AWS Cloud Engineer Intern</h3>
                         <h4>EcoEdge AI</h4>
-                        <p class="timeline-meta">Islamabad, Pakistan · On-site</p>
+                        <p class="timeline-meta">Islamabad, Pakistan &middot; On-site</p>
                         <p class="timeline-desc">Designed serverless event-driven workflows leveraging AWS Lambda, API Gateway, S3, and SNS to automate unstructured data processing.</p>
                         <div class="badge-grid">
                             <span class="skill-badge">AWS Lambda</span>
@@ -422,7 +449,7 @@
             </div>
         </section>
 
-        <!-- Projects Section (6 Systems Flagships with Custom Architecture SVGs) -->
+        <!-- Projects Section (6 Systems Flagships with Theme-Aware Architecture SVGs) -->
         <section class="section-shell" id="projects">
             <div class="section-head reveal">
                 <p class="eyebrow">Systems &amp; Architecture</p>
@@ -434,42 +461,42 @@
                     <div class="project-visual" aria-hidden="true">
                         <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <!-- Background Grid -->
-                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
-                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <path class="svg-grid" d="M0 35H460M0 70H460M0 105H460"/>
+                            <path class="svg-grid" d="M115 0V140M230 0V140M345 0V140"/>
                             <!-- Node 1: OCR / Ingest -->
-                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
-                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Prescription</text>
-                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">OCR / Vision</text>
+                            <rect class="svg-node" x="15" y="45" width="85" height="50" rx="8"/>
+                            <text class="svg-title" x="57" y="68">Prescription</text>
+                            <text class="svg-sub" x="57" y="82">OCR / Vision</text>
                             <!-- Arrow 1 -->
-                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 3"/>
-                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M100 70H125" stroke-dasharray="3 3"/>
+                            <polygon class="svg-arrow-head" points="125,67 131,70 125,73"/>
                             <!-- Node 2: Clinical Parser -->
-                            <rect x="132" y="45" width="95" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
-                            <text x="179" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">NLP Parser</text>
-                            <text x="179" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">LOINC/SNOMED</text>
+                            <rect class="svg-node" x="132" y="45" width="95" height="50" rx="8"/>
+                            <text class="svg-title" x="179" y="68">NLP Parser</text>
+                            <text class="svg-sub-accent" x="179" y="82">LOINC/SNOMED</text>
                             <!-- Arrow 2 -->
-                            <path d="M227 70H252" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="252,67 258,70 252,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M227 70H252"/>
+                            <polygon class="svg-arrow-head" points="252,67 258,70 252,73"/>
                             <!-- Node 3: FHIR Standardizer -->
-                            <rect x="259" y="45" width="92" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
-                            <text x="305" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">HL7 FHIR</text>
-                            <text x="305" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">R4 Schemas</text>
+                            <rect class="svg-node-accent" x="259" y="45" width="92" height="50" rx="8"/>
+                            <text class="svg-title" x="305" y="68">HL7 FHIR</text>
+                            <text class="svg-sub-accent" x="305" y="82">R4 Schemas</text>
                             <!-- Arrow 3 -->
-                            <path d="M351 70H376" stroke="#10B981" stroke-width="1.5"/>
-                            <polygon points="376,67 382,70 376,73" fill="#10B981"/>
+                            <path class="svg-arrow-status" d="M351 70H376"/>
+                            <polygon class="svg-arrow-head-status" points="376,67 382,70 376,73"/>
                             <!-- Node 4: Neo4j Graph -->
-                            <rect x="383" y="45" width="62" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
-                            <circle cx="414" cy="63" r="7" fill="none" stroke="#10B981" stroke-width="1.5"/>
-                            <text x="414" y="84" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Neo4j</text>
+                            <rect class="svg-node-status" x="383" y="45" width="62" height="50" rx="8"/>
+                            <circle class="svg-icon-status" cx="414" cy="63" r="7"/>
+                            <text class="svg-sub-status" x="414" y="84">Neo4j</text>
                         </svg>
                     </div>
                     <div class="project-body">
                         <p class="project-kind">Cloud &amp; Healthcare AI</p>
-                        <h3>SehatKosh — Cloud Clinical Data Pipeline</h3>
+                        <h3>SehatKosh &mdash; Cloud Clinical Data Pipeline</h3>
                         <p>Cloud-native pipeline parsing unstructured handwritten medical prescriptions and diagnostic reports into standardized HL7 FHIR R4 schemas, LOINC/SNOMED ontologies, and Neo4j graph relationships.</p>
                         <div class="project-actions">
                             <a class="button button-secondary button-small" href="https://github.com/AHSANooo" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://sehatkosh-donor-web.pages.dev" target="_blank" rel="noreferrer">Donor Portal ↗</a>
+                            <a class="button button-primary button-small" href="https://sehatkosh-donor-web.pages.dev" target="_blank" rel="noreferrer">Donor Portal &nearr;</a>
                         </div>
                     </div>
                 </article>
@@ -478,33 +505,33 @@
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
                         <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
-                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <path class="svg-grid" d="M0 35H460M0 70H460M0 105H460"/>
+                            <path class="svg-grid" d="M115 0V140M230 0V140M345 0V140"/>
                             <!-- Node 1: Git Cloner -->
-                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
-                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Git Cloner</text>
-                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">AST Scanner</text>
+                            <rect class="svg-node" x="15" y="45" width="85" height="50" rx="8"/>
+                            <text class="svg-title" x="57" y="68">Git Cloner</text>
+                            <text class="svg-sub" x="57" y="82">AST Scanner</text>
                             <!-- Arrow 1 -->
-                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M100 70H125"/>
+                            <polygon class="svg-arrow-head" points="125,67 131,70 125,73"/>
                             <!-- Node 2: Agent DAG -->
-                            <rect x="132" y="45" width="100" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
-                            <text x="182" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Gemini Agent</text>
-                            <text x="182" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Audit Pipeline</text>
+                            <rect class="svg-node-accent" x="132" y="45" width="100" height="50" rx="8"/>
+                            <text class="svg-title" x="182" y="68">Gemini Agent</text>
+                            <text class="svg-sub-accent" x="182" y="82">Audit Pipeline</text>
                             <!-- Arrow 2 -->
-                            <path d="M232 70H257" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="257,67 263,70 257,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M232 70H257"/>
+                            <polygon class="svg-arrow-head" points="257,67 263,70 257,73"/>
                             <!-- Node 3: Pydantic Schema -->
-                            <rect x="264" y="45" width="90" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
-                            <text x="309" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Pydantic V2</text>
-                            <text x="309" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Validation</text>
+                            <rect class="svg-node" x="264" y="45" width="90" height="50" rx="8"/>
+                            <text class="svg-title" x="309" y="68">Pydantic V2</text>
+                            <text class="svg-sub" x="309" y="82">Validation</text>
                             <!-- Arrow 3 -->
-                            <path d="M354 70H379" stroke="#10B981" stroke-width="1.5"/>
-                            <polygon points="379,67 385,70 379,73" fill="#10B981"/>
+                            <path class="svg-arrow-status" d="M354 70H379"/>
+                            <polygon class="svg-arrow-head-status" points="379,67 385,70 379,73"/>
                             <!-- Node 4: Streamlit UI -->
-                            <rect x="386" y="45" width="59" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
-                            <text x="415" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Streamlit</text>
-                            <text x="415" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Report</text>
+                            <rect class="svg-node-status" x="386" y="45" width="59" height="50" rx="8"/>
+                            <text class="svg-sub-status" x="415" y="68">Streamlit</text>
+                            <text class="svg-sub" x="415" y="82">Report</text>
                         </svg>
                     </div>
                     <div class="project-body">
@@ -512,7 +539,7 @@
                         <h3>Autonomous DevOps Repo Auditor</h3>
                         <p>Automated repository auditing agent engineered with Python, Gemini API, Pydantic V2, and Streamlit Cloud to analyze codebases and generate structured engineering reports.</p>
                         <div class="project-actions">
-                            <a class="button button-primary button-small" href="https://repo-auditor-agent.streamlit.app" target="_blank" rel="noreferrer">Live Demo ↗</a>
+                            <a class="button button-primary button-small" href="https://repo-auditor-agent.streamlit.app" target="_blank" rel="noreferrer">Live Demo &nearr;</a>
                         </div>
                     </div>
                 </article>
@@ -521,42 +548,42 @@
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
                         <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
-                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <path class="svg-grid" d="M0 35H460M0 70H460M0 105H460"/>
+                            <path class="svg-grid" d="M115 0V140M230 0V140M345 0V140"/>
                             <!-- Node 1: Electives Matrix -->
-                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
-                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">FAST Batches</text>
-                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Electives In</text>
+                            <rect class="svg-node" x="15" y="45" width="85" height="50" rx="8"/>
+                            <text class="svg-title" x="57" y="68">FAST Batches</text>
+                            <text class="svg-sub" x="57" y="82">Electives In</text>
                             <!-- Arrow 1 -->
-                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M100 70H125"/>
+                            <polygon class="svg-arrow-head" points="125,67 131,70 125,73"/>
                             <!-- Node 2: Clash Engine -->
-                            <rect x="132" y="45" width="100" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
-                            <text x="182" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Clash Solver</text>
-                            <text x="182" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Graph Matching</text>
+                            <rect class="svg-node-accent" x="132" y="45" width="100" height="50" rx="8"/>
+                            <text class="svg-title" x="182" y="68">Clash Solver</text>
+                            <text class="svg-sub-accent" x="182" y="82">Graph Matching</text>
                             <!-- Arrow 2 -->
-                            <path d="M232 70H257" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="257,67 263,70 257,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M232 70H257"/>
+                            <polygon class="svg-arrow-head" points="257,67 263,70 257,73"/>
                             <!-- Node 3: Schedule API -->
-                            <rect x="264" y="45" width="90" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
-                            <text x="309" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">REST Engine</text>
-                            <text x="309" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Streamlit API</text>
+                            <rect class="svg-node" x="264" y="45" width="90" height="50" rx="8"/>
+                            <text class="svg-title" x="309" y="68">REST Backend</text>
+                            <text class="svg-sub" x="309" y="82">Clash Engine</text>
                             <!-- Arrow 3 -->
-                            <path d="M354 70H379" stroke="#10B981" stroke-width="1.5"/>
-                            <polygon points="379,67 385,70 379,73" fill="#10B981"/>
+                            <path class="svg-arrow-status" d="M354 70H379"/>
+                            <polygon class="svg-arrow-head-status" points="379,67 385,70 379,73"/>
                             <!-- Node 4: Web & Android Client -->
-                            <rect x="386" y="45" width="59" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
-                            <text x="415" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Android</text>
-                            <text x="415" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">&amp; Web UI</text>
+                            <rect class="svg-node-status" x="386" y="45" width="59" height="50" rx="8"/>
+                            <text class="svg-sub-status" x="415" y="68">Android</text>
+                            <text class="svg-sub" x="415" y="82">&amp; Web UI</text>
                         </svg>
                     </div>
                     <div class="project-body">
                         <p class="project-kind">Full-Stack &amp; Android</p>
-                        <h3>FASTable — Multi-Batch Timetable Engine</h3>
+                        <h3>FASTable &mdash; Multi-Batch Timetable Engine</h3>
                         <p>Automated schedule generator and conflict-detection engine for FAST-NUCES students supporting elective combinations and real-time clash resolution across Web and Android interfaces.</p>
                         <div class="project-actions">
                             <a class="button button-secondary button-small" href="https://github.com/AHSANooo/FASTable" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://www.fastable.site/" target="_blank" rel="noreferrer">Live App ↗</a>
+                            <a class="button button-primary button-small" href="https://www.fastable.site/" target="_blank" rel="noreferrer">Live App &nearr;</a>
                         </div>
                     </div>
                 </article>
@@ -565,33 +592,33 @@
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
                         <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
-                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <path class="svg-grid" d="M0 35H460M0 70H460M0 105H460"/>
+                            <path class="svg-grid" d="M115 0V140M230 0V140M345 0V140"/>
                             <!-- Node 1: Next.js Client -->
-                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
-                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Next.js</text>
-                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">App Router</text>
+                            <rect class="svg-node" x="15" y="45" width="85" height="50" rx="8"/>
+                            <text class="svg-title" x="57" y="68">Next.js</text>
+                            <text class="svg-sub" x="57" y="82">App Router</text>
                             <!-- Arrow 1 -->
-                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M100 70H125"/>
+                            <polygon class="svg-arrow-head" points="125,67 131,70 125,73"/>
                             <!-- Node 2: Web3 Provider -->
-                            <rect x="132" y="45" width="95" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
-                            <text x="179" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Ethers.js</text>
-                            <text x="179" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Provider</text>
+                            <rect class="svg-node" x="132" y="45" width="95" height="50" rx="8"/>
+                            <text class="svg-title" x="179" y="68">Ethers.js</text>
+                            <text class="svg-sub" x="179" y="82">Provider</text>
                             <!-- Arrow 2 -->
-                            <path d="M227 70H252" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="252,67 258,70 252,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M227 70H252"/>
+                            <polygon class="svg-arrow-head" points="252,67 258,70 252,73"/>
                             <!-- Node 3: Solidity Contract -->
-                            <rect x="259" y="45" width="98" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
-                            <text x="308" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Solidity</text>
-                            <text x="308" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Gas Optimized</text>
+                            <rect class="svg-node-accent" x="259" y="45" width="98" height="50" rx="8"/>
+                            <text class="svg-title" x="308" y="68">Solidity</text>
+                            <text class="svg-sub-accent" x="308" y="82">Gas Optimized</text>
                             <!-- Arrow 3 -->
-                            <path d="M357 70H382" stroke="#10B981" stroke-width="1.5"/>
-                            <polygon points="382,67 388,70 382,73" fill="#10B981"/>
+                            <path class="svg-arrow-status" d="M357 70H382"/>
+                            <polygon class="svg-arrow-head-status" points="382,67 388,70 382,73"/>
                             <!-- Node 4: On-Chain Billing -->
-                            <rect x="389" y="45" width="56" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
-                            <text x="417" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Vault</text>
-                            <text x="417" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Settle</text>
+                            <rect class="svg-node-status" x="389" y="45" width="56" height="50" rx="8"/>
+                            <text class="svg-sub-status" x="417" y="68">Vault</text>
+                            <text class="svg-sub" x="417" y="82">Settle</text>
                         </svg>
                     </div>
                     <div class="project-body">
@@ -600,7 +627,7 @@
                         <p>Gas-optimized smart contract recurring billing protocol built with Solidity and a Next.js App Router frontend for trustless, automated on-chain payments.</p>
                         <div class="project-actions">
                             <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Subscription-Billing-System" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://subscription-billing-system.vercel.app/" target="_blank" rel="noreferrer">Live Demo ↗</a>
+                            <a class="button button-primary button-small" href="https://subscription-billing-system.vercel.app/" target="_blank" rel="noreferrer">Live Demo &nearr;</a>
                         </div>
                     </div>
                 </article>
@@ -609,42 +636,42 @@
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
                         <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
-                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <path class="svg-grid" d="M0 35H460M0 70H460M0 105H460"/>
+                            <path class="svg-grid" d="M115 0V140M230 0V140M345 0V140"/>
                             <!-- Node 1: Passage Ingest -->
-                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
-                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">Passage Ingest</text>
-                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Raw Corpora</text>
+                            <rect class="svg-node" x="15" y="45" width="85" height="50" rx="8"/>
+                            <text class="svg-title" x="57" y="68">Passage Ingest</text>
+                            <text class="svg-sub" x="57" y="82">Raw Corpora</text>
                             <!-- Arrow 1 -->
-                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M100 70H125"/>
+                            <polygon class="svg-arrow-head" points="125,67 131,70 125,73"/>
                             <!-- Node 2: NLP Tokenizer -->
-                            <rect x="132" y="45" width="95" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
-                            <text x="179" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">NLP Pipeline</text>
-                            <text x="179" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Tokenize &amp; Embed</text>
+                            <rect class="svg-node" x="132" y="45" width="95" height="50" rx="8"/>
+                            <text class="svg-title" x="179" y="68">NLP Pipeline</text>
+                            <text class="svg-sub" x="179" y="82">Tokenize &amp; Embed</text>
                             <!-- Arrow 2 -->
-                            <path d="M227 70H252" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="252,67 258,70 252,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M227 70H252"/>
+                            <polygon class="svg-arrow-head" points="252,67 258,70 252,73"/>
                             <!-- Node 3: Question Generator -->
-                            <rect x="259" y="45" width="98" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
-                            <text x="308" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Q/A Engine</text>
-                            <text x="308" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Distractor Gen</text>
+                            <rect class="svg-node-accent" x="259" y="45" width="98" height="50" rx="8"/>
+                            <text class="svg-title" x="308" y="68">Q/A Engine</text>
+                            <text class="svg-sub-accent" x="308" y="82">Distractor Gen</text>
                             <!-- Arrow 3 -->
-                            <path d="M357 70H382" stroke="#10B981" stroke-width="1.5"/>
-                            <polygon points="382,67 388,70 382,73" fill="#10B981"/>
+                            <path class="svg-arrow-status" d="M357 70H382"/>
+                            <polygon class="svg-arrow-head-status" points="382,67 388,70 382,73"/>
                             <!-- Node 4: Streamlit UI -->
-                            <rect x="389" y="45" width="56" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
-                            <text x="417" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">Quiz</text>
-                            <text x="417" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">App</text>
+                            <rect class="svg-node-status" x="389" y="45" width="56" height="50" rx="8"/>
+                            <text class="svg-sub-status" x="417" y="68">Quiz</text>
+                            <text class="svg-sub" x="417" y="82">App</text>
                         </svg>
                     </div>
                     <div class="project-body">
                         <p class="project-kind">Applied NLP</p>
-                        <h3>PrepSpace — NLP Comprehension &amp; Quiz Engine</h3>
+                        <h3>PrepSpace &mdash; NLP Comprehension &amp; Quiz Engine</h3>
                         <p>Automated reading comprehension passage generator and dynamic quiz builder powered by NLP pipelines for automated learning assessments.</p>
                         <div class="project-actions">
                             <a class="button button-secondary button-small" href="https://github.com/AHSANooo/Reading-Comprehension-and-Quiz-Generation-System" target="_blank" rel="noreferrer">GitHub</a>
-                            <a class="button button-primary button-small" href="https://prepspace.streamlit.app/" target="_blank" rel="noreferrer">Live Demo ↗</a>
+                            <a class="button button-primary button-small" href="https://prepspace.streamlit.app/" target="_blank" rel="noreferrer">Live Demo &nearr;</a>
                         </div>
                     </div>
                 </article>
@@ -653,33 +680,33 @@
                 <article class="project-card reveal">
                     <div class="project-visual" aria-hidden="true">
                         <svg viewBox="0 0 460 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 35H460M0 70H460M0 105H460" stroke="#141C28" stroke-width="1"/>
-                            <path d="M115 0V140M230 0V140M345 0V140" stroke="#141C28" stroke-width="1"/>
+                            <path class="svg-grid" d="M0 35H460M0 70H460M0 105H460"/>
+                            <path class="svg-grid" d="M115 0V140M230 0V140M345 0V140"/>
                             <!-- Node 1: IR Sensor Feed -->
-                            <rect x="15" y="45" width="85" height="50" rx="8" fill="#11161F" stroke="#1E2634" stroke-width="1.5"/>
-                            <text x="57" y="68" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">IR Thermal</text>
-                            <text x="57" y="82" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Raw Frames</text>
+                            <rect class="svg-node" x="15" y="45" width="85" height="50" rx="8"/>
+                            <text class="svg-title" x="57" y="68">IR Thermal</text>
+                            <text class="svg-sub" x="57" y="82">Raw Frames</text>
                             <!-- Arrow 1 -->
-                            <path d="M100 70H125" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="125,67 131,70 125,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M100 70H125"/>
+                            <polygon class="svg-arrow-head" points="125,67 131,70 125,73"/>
                             <!-- Node 2: DIP Preprocessor -->
-                            <rect x="132" y="45" width="95" height="50" rx="8" fill="#11161F" stroke="#2E3A4E" stroke-width="1.5"/>
-                            <text x="179" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">OpenCV Filter</text>
-                            <text x="179" y="82" fill="#3B82F6" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Thresholding</text>
+                            <rect class="svg-node" x="132" y="45" width="95" height="50" rx="8"/>
+                            <text class="svg-title" x="179" y="68">OpenCV Filter</text>
+                            <text class="svg-sub" x="179" y="82">Thresholding</text>
                             <!-- Arrow 2 -->
-                            <path d="M227 70H252" stroke="#3B82F6" stroke-width="1.5"/>
-                            <polygon points="252,67 258,70 252,73" fill="#3B82F6"/>
+                            <path class="svg-arrow" d="M227 70H252"/>
+                            <polygon class="svg-arrow-head" points="252,67 258,70 252,73"/>
                             <!-- Node 3: Contour Classifier -->
-                            <rect x="259" y="45" width="98" height="50" rx="8" fill="#161D29" stroke="#3B82F6" stroke-width="1.5"/>
-                            <text x="308" y="68" fill="#F3F6FA" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">Silhouette</text>
-                            <text x="308" y="82" fill="#60A5FA" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Contour Analysis</text>
+                            <rect class="svg-node-accent" x="259" y="45" width="98" height="50" rx="8"/>
+                            <text class="svg-title" x="308" y="68">Silhouette</text>
+                            <text class="svg-sub-accent" x="308" y="82">Contour Analysis</text>
                             <!-- Arrow 3 -->
-                            <path d="M357 70H382" stroke="#10B981" stroke-width="1.5"/>
-                            <polygon points="382,67 388,70 382,73" fill="#10B981"/>
+                            <path class="svg-arrow-status" d="M357 70H382"/>
+                            <polygon class="svg-arrow-head-status" points="382,67 388,70 382,73"/>
                             <!-- Node 4: Target Bounding Box -->
-                            <rect x="389" y="45" width="56" height="50" rx="8" fill="#11161F" stroke="#10B981" stroke-width="1.5"/>
-                            <text x="417" y="68" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle">BBox</text>
-                            <text x="417" y="82" fill="#9BA7B8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Detect</text>
+                            <rect class="svg-node-status" x="389" y="45" width="56" height="50" rx="8"/>
+                            <text class="svg-sub-status" x="417" y="68">BBox</text>
+                            <text class="svg-sub" x="417" y="82">Detect</text>
                         </svg>
                     </div>
                     <div class="project-body">
@@ -702,6 +729,7 @@
             </div>
             <div class="contact-cta reveal">
                 <div class="contact-intro">
+                    <span class="status-pill"><span class="status-dot"></span>Available for Backend, Cloud &amp; AI Engineering Roles</span>
                     <p class="contact-kicker">Open to high-impact engineering collaborations.</p>
                     <p>For backend systems, cloud-native builds, distributed clinical pipelines, or intelligent automation, reach out directly through any channel below.</p>
                 </div>
@@ -740,7 +768,7 @@
 
     <footer class="footer">
         <div class="footer-inner">
-            <p>© 2026 Muhammad Ahsan. Built for deterministic output, cloud performance, and scalable architecture.</p>
+            <p>&copy; 2026 Muhammad Ahsan. Built for deterministic output, cloud performance, and scalable architecture.</p>
             <div class="footer-links" aria-label="Footer social links">
                 <a href="https://github.com/AHSANooo" target="_blank" rel="noreferrer">GitHub</a>
                 <a href="https://www.linkedin.com/in/mahsan-cs" target="_blank" rel="noreferrer">LinkedIn</a>
