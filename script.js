@@ -1,10 +1,10 @@
 // Theme Initialization (runs immediately to set up state)
 function initTheme() {
-    const storedTheme = localStorage.getItem('theme') || 'dark';
+    const storedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', storedTheme);
     const themeColorMeta = document.querySelector('meta[name="theme-color"]');
     if (themeColorMeta) {
-        themeColorMeta.setAttribute('content', storedTheme === 'light' ? '#F4F7FB' : '#121824');
+        themeColorMeta.setAttribute('content', storedTheme === 'dark' ? '#1E293B' : '#F8FAFC');
     }
 }
 initTheme();
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme Toggle Handler
     themeToggle?.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-        const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', nextTheme);
         localStorage.setItem('theme', nextTheme);
         if (themeColorMeta) {
-            themeColorMeta.setAttribute('content', nextTheme === 'light' ? '#F4F7FB' : '#121824');
+            themeColorMeta.setAttribute('content', nextTheme === 'dark' ? '#1E293B' : '#F8FAFC');
         }
     });
 
