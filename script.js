@@ -1,3 +1,14 @@
+// Theme Initialization (runs immediately to set up state)
+function initTheme() {
+    const storedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', storedTheme);
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeColorMeta) {
+        themeColorMeta.setAttribute('content', storedTheme === 'light' ? '#F4F7FB' : '#121824');
+    }
+}
+initTheme();
+
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
@@ -5,6 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section[id]');
     const revealElements = document.querySelectorAll('.reveal');
+    const themeToggle = document.getElementById('themeToggle');
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+    // Theme Toggle Handler
+    themeToggle?.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+        const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('theme', nextTheme);
+        if (themeColorMeta) {
+            themeColorMeta.setAttribute('content', nextTheme === 'light' ? '#F4F7FB' : '#121824');
+        }
+    });
 
     // Mobile Drawer Navigation
     function setMobileMenuState(open) {
@@ -87,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
     revealElements.forEach((element) => {
-        // Immediate reveal check for elements in viewport on load
         const rect = element.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {
             element.classList.add('visible');
